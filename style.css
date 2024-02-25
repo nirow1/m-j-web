@@ -1,0 +1,42 @@
+:root{
+    --black-red: #1B0300;
+    --blood-red: #8C0F00;
+    --neon-red: #FF5733;
+    --flesh-pink: #814C49;
+    --hell-orange: #CB5E29;
+    --fire-gold: #E6AE47;
+    --orange-gold: #D68E33;
+    --doom-green: #001B00;
+    --toxic-green: #95A94E;
+    --silver: #D1D2D2;
+    --plasma-blue:#B9E6FD;
+}
+@font-face {
+    font-family: Eternal_Logo;
+    src: url(/Fonts/EternalLogo-lg2dd.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Eternal;
+    src: url(Fonts/EternalUiRegular-BWZGd.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Eternal;
+    src: url(Fonts/EternalUiBold-Rpj0A.ttf);
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Eternal_Logo;
+    text-align: center;
+    color: var(--blood-red);
+}
+body{
+    font-family: "Eternal";
+    font-size: 18px;
+    color: var(--blood-red);
+}
+a{
+    color: var(--plasma-blue);
+}
