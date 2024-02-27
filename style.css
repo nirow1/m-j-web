@@ -1,5 +1,5 @@
 :root{
-    --black-red: #1B0300;
+    --black-red: #160300;
     --blood-red: #8C0F00;
     --neon-red: #FF5733;
     --flesh-pink: #814C49;
@@ -8,8 +8,8 @@
     --orange-gold: #D68E33;
     --doom-green: #001B00;
     --toxic-green: #95A94E;
-    --silver: #D1D2D2;
-    --plasma-blue:#B9E6FD;
+    --silver: #a6acac;
+    --plasma-blue:#86bdf0;
 }
 @font-face {
     font-family: Eternal_Logo;
@@ -27,16 +27,72 @@
     font-weight: bold;
 }
 
-h1, h2, h3, h4, h5 {
+body > header{
+    height: 100px;
+    width: 100%;
+    background: black;
+    color: var(--hell-orange);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body{
+    background: var(--black-red);
+    font-family: "Eternal";
+    font-size: 20px;
+    color: var(--blood-red);
+}
+
+article{
+    max-width: 960px;
+    margin: 10px auto;
+    padding: 50px 50px 10px 50px;
+}
+
+article header{
+    height: 80px;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5 {
+    padding: 10px 0;
     font-family: Eternal_Logo;
     text-align: center;
+    width: max-content;
     color: var(--blood-red);
 }
-body{
-    font-family: "Eternal";
-    font-size: 18px;
-    color: var(--blood-red);
+article h1{
+    margin: 0;
+    font-size: 2.5em;
+    border-bottom: 4px solid var(--flesh-pink);
 }
-a{
+article section p{
+    margin-bottom: 1em;
+    line-height: 1.8em;
+}
+
+article section a{
     color: var(--plasma-blue);
+}
+
+.avatar{
+    float: right;
+    width: 300px;
+    padding-left: 10px;
+}
+.clear{
+    clear: both;
+}
+.button{
+    background: black;
+    color: var(--hell-orange);
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    width: fit-content;
 }
