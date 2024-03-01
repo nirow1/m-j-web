@@ -27,13 +27,52 @@
     font-weight: bold;
 }
 
-body > header{
-    height: 100px;
-    width: 100%;
-    background: black;
-    color: var(--hell-orange);
+
+#logo {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center; 
+    justify-content: space-between;
+    background: black;
+}
+  
+#logo img {
+    padding-left: 5%;
+    width: 120px;
+    height: 170px;
+}
+  
+#logo h1, #logo span {
+    font-family: Eternal_Logo;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+  
+#logo small {
+    font-size: 14px;
+    color: var(--flesh-pink);
+}
+  
+#logo nav {
+    display: flex;
+}
+  
+#logo ul {
+    display: flex;
+}
+  
+#logo li {
+    margin: 0 10px;
+    padding: 10px;
+}
+  
+#logo a {
+
+    color: var(--hell-orange);
+}
+  
+#logo a:hover {
+    color: white;
+    background-color: red;
 }
 
 body{
@@ -41,6 +80,7 @@ body{
     font-family: "Eternal";
     font-size: 20px;
     color: var(--blood-red);
+    margin: 0;
 }
 
 article{
